@@ -1,0 +1,9 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="43" height="43" viewBox="0 0 43 43">
+  <g id="Group_78" data-name="Group 78" transform="translate(-984 -3727)">
+    <g id="Ellipse_20" data-name="Ellipse 20" transform="translate(988 3731)" fill="#3e43b9" stroke="#878ad6" stroke-width="4">
+      <circle cx="17.5" cy="17.5" r="17.5" stroke="none"/>
+      <circle cx="17.5" cy="17.5" r="19.5" fill="none"/>
+    </g>
+    <path id="Icon_simple-minutemailer" data-name="Icon simple-minutemailer" d="M5.394,4.055l3.345,3.62-2.36,4.652,4.983-.893,2.269,5.474L23.267,4.271ZM4.778,11.9l.928-.763-1.2.378-.122-.175.494-.48-.649.262A6.6,6.6,0,0,0,2.068,22.081a6.557,6.557,0,0,1-.858-3.253A6.768,6.768,0,0,1,5.393,12.6l.305-.743-.727.321-.2-.276.011-.011Zm4.231-1.91,1.549-2.735,9.111-2.134Z" transform="translate(994.717 3735.078)" fill="#fff"/>
+  </g>
+</svg>

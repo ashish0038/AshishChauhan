@@ -1,9 +1,18 @@
-<svg xmlns="http://www.w3.org/2000/svg" width="225" height="57" viewBox="0 0 225 57">
-  <g id="Group_68" data-name="Group 68" transform="translate(-140 -49)">
-    <g id="Group_5" data-name="Group 5">
-      <circle id="Ellipse_3" data-name="Ellipse 3" cx="28.5" cy="28.5" r="28.5" transform="translate(140 49)" fill="#3e43b9"/>
-      <text id="AC" transform="translate(152 88)" fill="#fff" font-size="33" font-family="HarabaraMaisBold-HarabaraMaisBold, Harabara Mais Demo" font-weight="700"><tspan x="0" y="0">ac</tspan></text>
+<svg xmlns="http://www.w3.org/2000/svg" width="192" height="66" viewBox="0 0 192 66">
+  <g id="Group_83" data-name="Group 83" transform="translate(71 192)">
+    <text id="ashish_chauhan" data-name="ashish
+chauhan" transform="translate(7 -158)" fill="#3e43b9" font-size="40" font-family="HarabaraMaisBold-HarabaraMaisBold, Harabara Mais Demo" font-weight="700"><tspan x="0" y="0">ashish</tspan><tspan fill="#525252" font-size="31"><tspan x="0" y="24">chauhan</tspan></tspan></text>
+    <g id="Group_81" data-name="Group 81" transform="translate(-8 -2)">
+      <line id="Line_8" data-name="Line 8" x2="18" transform="translate(-28.5 -131.5)" fill="none" stroke="#878ad6" stroke-linecap="round" stroke-width="2"/>
+      <line id="Line_9" data-name="Line 9" x2="15" transform="translate(-16.764 -135.5)" fill="none" stroke="#878ad6" stroke-linecap="round" stroke-width="2"/>
+      <line id="Line_10" data-name="Line 10" x2="23" transform="translate(-16.5 -139.5)" fill="none" stroke="#878ad6" stroke-linecap="round" stroke-width="2"/>
     </g>
-    <text id="designFlex" transform="translate(216 87)" fill="#3e43b9" font-size="32" font-family="HarabaraMaisBold-HarabaraMaisBold, Harabara Mais Demo" font-weight="700"><tspan x="0" y="0">design</tspan><tspan y="0" fill="#525252">Flex</tspan></text>
+    <g id="Group_82" data-name="Group 82" transform="translate(0 2)">
+      <circle id="Ellipse_3" data-name="Ellipse 3" cx="28.5" cy="28.5" r="28.5" transform="translate(-71 -189)" fill="#3e43b9"/>
+      <g id="ux-design" transform="translate(-65 -199)" opacity="0.26">
+        <path id="Path_221" data-name="Path 221" d="M37.821,31.077c0-.084,0-.168,0-.252a14.824,14.824,0,0,0-29.648,0c0,.084,0,.168,0,.252A14.83,14.83,0,1,0,23,56.719a14.737,14.737,0,0,0,8.086,2.406,14.808,14.808,0,0,0,6.735-28.048ZM23,53.333A12.106,12.106,0,0,1,18.984,45.1a14.857,14.857,0,0,0,8.033,0A12.106,12.106,0,0,1,23,53.333Zm0-10.38a12.079,12.079,0,0,1-3.88-.636A12.122,12.122,0,0,1,23,35.269a12.122,12.122,0,0,1,3.88,7.048A12.079,12.079,0,0,1,23,42.953Zm-6.395-1.827A12.155,12.155,0,0,1,11.033,32.8a12.251,12.251,0,0,1,3.881-.628,12.053,12.053,0,0,1,5.845,1.5A14.818,14.818,0,0,0,16.605,41.126Zm8.636-7.449a12.053,12.053,0,0,1,5.845-1.5,12.251,12.251,0,0,1,3.881.628,12.155,12.155,0,0,1-5.572,8.326A14.818,14.818,0,0,0,25.241,33.676ZM23,18.7A12.144,12.144,0,0,1,35.1,30.023a14.96,14.96,0,0,0-4.016-.547A14.737,14.737,0,0,0,23,31.882a14.737,14.737,0,0,0-8.086-2.406,14.96,14.96,0,0,0-4.016.547A12.144,12.144,0,0,1,23,18.7ZM14.914,56.43a12.11,12.11,0,0,1-6.4-22.456,14.879,14.879,0,0,0,7.752,10.055c0,.091,0,.181,0,.272a14.78,14.78,0,0,0,4.5,10.624A12.053,12.053,0,0,1,14.914,56.43Zm16.172,0a12.053,12.053,0,0,1-5.845-1.5,14.78,14.78,0,0,0,4.5-10.624c0-.091,0-.182,0-.272a14.879,14.879,0,0,0,7.752-10.055,12.11,12.11,0,0,1-6.4,22.456Z" fill="#878ad6"/>
+      </g>
+      <text id="AC" transform="translate(-61 -150)" fill="#fff" font-size="36" font-family="HarabaraMaisBold-HarabaraMaisBold, Harabara Mais Demo" font-weight="700"><tspan x="0" y="0">ac</tspan></text>
+    </g>
   </g>
 </svg>
