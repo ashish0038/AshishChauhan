@@ -18,7 +18,7 @@
   font-family: 'Harabara Mais Demo';
   src: url('../fonts/Harabara_Mais.woff2') format('woff2'),
        url('../fonts/Harabara_Mais.otf') format('otf'),
-       url('../fonts/Harabara_Mais.svg') format('svg');
+       url('../fonts/Harabara_Mais.svg#logo') format('svg');
 }
 
 .navbar-default {
@@ -30,7 +30,7 @@
   transition: margin ease-out 1s;
 }
 .darkHeader .mob_logo {
-  width: 59%;
+  width: 73%;
   transition: width ease-in-out 1s;
   font-family: "Harabara Mais Demo";
 }
@@ -701,7 +701,7 @@ footer {
   background-repeat: no-repeat;
 }
 .sec_title {
-  width: 220px;
+  height: 60px;
   margin-bottom: 2em;
 }
 .sec_title_arrow {
