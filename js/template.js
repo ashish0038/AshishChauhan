@@ -1,25 +1,6 @@
 
-function openNav() {
-    document.getElementById("mySidenav").style.width = "250px";
-    document.getElementById("main").style.marginLeft = "250px";
-    document.getElementById("main").className += " icon_menu";
-}
-function closeNav() {
-    document.getElementById("mySidenav").style.width = "0";
-    document.getElementById("main").style.marginLeft = "0";
-    $('#main').removeClass('icon_menu');
-}
 
-/**
- * mlpushmenu.js v1.0.0
- * http://www.codrops.com
- *
- * Licensed under the MIT license.
- * http://www.opensource.org/licenses/mit-license.php
- * 
- * Copyright 2013, Codrops
- * http://www.codrops.com
- */
+
 ;( function( window ) {
 
     'use strict';
@@ -32,6 +13,18 @@ function closeNav() {
         }
         return a;
     }
+
+    $(window).scroll(function() {    
+        var scroll = $(window).scrollTop();
+    
+         //>=, not <=
+        if (scroll >= 350) {
+            //clearHeader, not clearheader - caps H
+            $(".navbar").addClass("darkHeader");
+        } else {
+            $(".navbar").removeClass("darkHeader");
+        }
+    }); //missing );
 
     // taken from https://github.com/inuyaksa/jquery.nicescroll/blob/master/jquery.nicescroll.js
     function hasParent( e, id ) {
