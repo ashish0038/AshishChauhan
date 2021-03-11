@@ -1,18 +1,24 @@
 @font-face {
   font-family: "Okra";
-  src: url("../fonts/Okra-Light.ttf"), /* IE9 Compat Modes */ url("../fonts/Okra-Medium.ttf") format("truetype"),
-    /* Safari, Android, iOS */ url("../fonts/Okra-SemiBold.ttf") format("truetype"),
-    /* Safari, Android, iOS */ url("../fonts/Okra-ExtraLight.ttf") format("truetype"),
-    /* Safari, Android, iOS */ url("../fonts/Okra-Thin.ttf") format("truetype"),
-    /* Safari, Android, iOS */ url("../fonts/Okra-Regular.ttf") format("truetype"); /* Legacy iOS */
+  src: url("../fonts/Okra-Light.ttf");
+}
+@font-face {
+  font-family: "Okra-SemiBold";
+  src: url("../fonts/Okra-SemiBold.ttf");
+}
+@font-face {
+  font-family: "Okra-Regular";
+  src: url("../fonts/Okra-Regular.ttf")
 }
 @font-face {
   font-family: "Harabara Mais Demo";
-  src: url("../fonts/Harabara_Mais.otf"), /* IE9 Compat Modes */ url("fonts/Okra-Medium.ttf") format("truetype"),
-    /* Safari, Android, iOS */ url("../fonts/Okra-SemiBold.ttf") format("truetype"),
-    /* Safari, Android, iOS */ url("../fonts/Okra-ExtraLight.ttf") format("truetype"),
-    /* Safari, Android, iOS */ url("../fonts/Okra-Thin.ttf") format("truetype"),
-    /* Safari, Android, iOS */ url("../fonts/Okra-Regular.ttf") format("truetype"); /* Legacy iOS */
+  src: url("../fonts/Harabara_Mais.otf")
+}
+@font-face {
+  font-family: 'Harabara Mais Demo';
+  src: url('../fonts/Harabara_Mais.woff2') format('woff2'),
+       url('../fonts/Harabara_Mais.otf') format('otf'),
+       url('../fonts/Harabara_Mais.svg') format('svg');
 }
 
 .navbar-default {
@@ -23,10 +29,14 @@
   margin-top: 20px;
   transition: margin ease-out 1s;
 }
-
+.text_font{
+  display: none;
+  font-family: "Harabara Mais Demo";
+}
 .darkHeader .mob_logo {
   width: 59%;
   transition: width ease-in-out 1s;
+  font-family: "Harabara Mais Demo";
 }
 
 .darkHeader {
@@ -100,6 +110,7 @@
 
 .mob_logo {
   width: 80%;
+  font-family: "Harabara Mais Demo";
   transition: width ease-in-out 1s;
 }
 
@@ -994,6 +1005,7 @@ footer {
   text-align: center;
   vertical-align: middle;
   line-height: normal;
+  margin-bottom: 5px;
 }
 
 
