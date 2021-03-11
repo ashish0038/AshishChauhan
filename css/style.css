@@ -1,6 +1,14 @@
 @font-face {
   font-family: "Okra";
-  src: url("../fonts/Okra-Light.ttf"), /* IE9 Compat Modes */ url("fonts/Okra-Medium.ttf") format("truetype"),
+  src: url("../fonts/Okra-Light.ttf"), /* IE9 Compat Modes */ url("../fonts/Okra-Medium.ttf") format("truetype"),
+    /* Safari, Android, iOS */ url("../fonts/Okra-SemiBold.ttf") format("truetype"),
+    /* Safari, Android, iOS */ url("../fonts/Okra-ExtraLight.ttf") format("truetype"),
+    /* Safari, Android, iOS */ url("../fonts/Okra-Thin.ttf") format("truetype"),
+    /* Safari, Android, iOS */ url("../fonts/Okra-Regular.ttf") format("truetype"); /* Legacy iOS */
+}
+@font-face {
+  font-family: "Harabara Mais Demo";
+  src: url("../fonts/Harabara_Mais.otf"), /* IE9 Compat Modes */ url("fonts/Okra-Medium.ttf") format("truetype"),
     /* Safari, Android, iOS */ url("../fonts/Okra-SemiBold.ttf") format("truetype"),
     /* Safari, Android, iOS */ url("../fonts/Okra-ExtraLight.ttf") format("truetype"),
     /* Safari, Android, iOS */ url("../fonts/Okra-Thin.ttf") format("truetype"),
