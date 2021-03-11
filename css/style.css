@@ -29,10 +29,6 @@
   margin-top: 20px;
   transition: margin ease-out 1s;
 }
-.text_font{
-  display: none;
-  font-family: "Harabara Mais Demo";
-}
 .darkHeader .mob_logo {
   width: 59%;
   transition: width ease-in-out 1s;
