@@ -8,17 +8,16 @@
 }
 @font-face {
   font-family: "Okra-Regular";
-  src: url("../fonts/Okra-Regular.ttf")
+  src: url("../fonts/Okra-Regular.ttf");
 }
 @font-face {
   font-family: "Harabara Mais Demo";
-  src: url("../fonts/Harabara_Mais.otf")
+  src: url("../fonts/Harabara_Mais.otf");
 }
 @font-face {
-  font-family: 'Harabara Mais Demo';
-  src: url('../fonts/Harabara_Mais.woff2') format('woff2'),
-       url('../fonts/Harabara_Mais.otf') format('otf'),
-       url('../fonts/Harabara_Mais.svg#logo') format('svg');
+  font-family: "Harabara Mais Demo";
+  src: url("../fonts/Harabara_Mais.woff2") format("woff2"), url("../fonts/Harabara_Mais.otf") format("otf"),
+    url("../fonts/Harabara_Mais.svg#logo") format("svg");
 }
 
 .navbar-default {
@@ -30,7 +29,7 @@
   transition: margin ease-out 1s;
 }
 .darkHeader .mob_logo {
-  width: 73%;
+  width: 65%;
   transition: width ease-in-out 1s;
   font-family: "Harabara Mais Demo";
 }
@@ -126,9 +125,10 @@ body {
 .navbar-brand {
   float: left;
   font-size: 18px;
-  height: 51px;
+  height: auto;
   line-height: 21px;
   padding: 18px 0;
+  position: relative;
 }
 
 .navbar-default .navbar-nav > .open > a,
@@ -404,10 +404,13 @@ body {
 }
 
 @media only screen and (min-width: 320px) and (max-width: 1024px) {
+  .navbar-brand{
+    height: 51px;
+  }
   .mob_logo {
     margin-left: 12px;
     margin-top: -12px;
-    width: 117px;
+    width: 65%;
   }
   .navbar-default {
     margin-top: 0px;
@@ -607,7 +610,6 @@ footer {
 }
 .home-box h3 {
   font-size: 34px;
-  color: #3e43b9;
   margin-top: 0;
   margin-bottom: 40px;
   position: relative;
@@ -952,7 +954,7 @@ footer {
   font-weight: bold;
   font-family: "Okra-medium";
 }
-.project-grid{
+.project-grid {
   display: flex;
   flex-wrap: wrap;
   justify-content: space-between;
@@ -1003,9 +1005,147 @@ footer {
   line-height: normal;
   margin-bottom: 5px;
 }
+.drop {
+  height: 30px;
+  width: 30px;
+  border-radius: 15px;
+  background-color: #3e43b9;
+  position: absolute;
+  top: -13%;
+  left: -15.4%;
+  transform: translate(120%, -800%) scaleX(0.5);
+  animation: move 4s cubic-bezier(1, 0.04, 0.74, 0.2) infinite;
+  z-index: -1;
+}
 
+@keyframes move {
+  0% {
+    transform: translate(120%, -800%) scaleX(0.2);
+    height: 60px;
+  }
+  30% {
+    transform: translate(120%, -200%);
+    height: 30px;
+  }
+  70% {
+    transform: translate(120%, 100%);
+    height: 30px;
+  }
+  100% {
+    transform: translate(120%, 800%) scaleX(0.2);
+    height: 60px;
+  }
+}
+
+.hero-title {
+  background: 50% 100% / 50% 50% no-repeat radial-gradient(ellipse at bottom, #3e43b9, transparent, transparent);
+  -webkit-background-clip: text;
+  background-clip: text;
+  color: transparent;
+  animation: reveal 3000ms ease-in-out forwards 200ms, glow 2500ms linear forwards 2000ms;
+}
+@keyframes reveal {
+  80% {
+    letter-spacing: 0px;
+  }
+  100% {
+    background-size: 300% 300%;
+    letter-spacing: 0px;
+  }
+}
+@keyframes glow {
+  40% {
+    text-shadow: 0 0 8px #fff;
+  }
+}
+.home-box p{
+  animation-name: titleAnimation;
+  animation-timing-function: ease;
+  animation-duration: 3s;
+}
+@keyframes titleAnimation {
+  0% {
+    transform: translateY(-50px);
+    opacity: 0;
+    -webkit-clip-path: polygon(100% 0, 100% 100%, 0 100%, 0 80%);
+    clip-path: polygon(100% 0, 100% 100%, 0 100%, 0 80%);
+  }
+  80% {
+    transform: translateY(10px);
+    opacity: 1;
+    -webkit-clip-path: polygon(100% 0, 100% 100%, 0 100%, 0 15%);
+    clip-path: polygon(100% 0, 100% 100%, 0 100%, 0 15%);
+  }
+  100% {
+    transform: translateY(50px);
+    opacity: 0;
+    -webkit-clip-path: polygon(100% 0, 100% 0%, 0 100%, 0 100%);
+    clip-path: polygon(100% 0, 100% 0%, 0 100%, 0 100%);
+  }
+}
+
+
+
+.cursor {
+  display: none;
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: var(--width);
+  height: var(--height);
+  transform: translate(
+    calc(var(--x) - var(--width) / 2),
+    calc(var(--y) - var(--height) / 2)
+  );
+  /* transition-duration: 125ms;
+  transition-timing-function: cubic-bezier(0.39, 0.575, 0.565, 1);
+  transition-property: width, height, transform; */
+  transition: 150ms width cubic-bezier(0.39, 0.575, 0.565, 1),
+    150ms height cubic-bezier(0.39, 0.575, 0.565, 1),
+    150ms transform cubic-bezier(0.39, 0.575, 0.565, 1);
+  z-index: 1035;
+  pointer-events: none;
+  will-change: transform;
+}
+@media (pointer: fine) {
+  .cursor {
+    display: block;
+  }
+}
+.cursor::after {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  border-radius: var(--radius);
+  border: 2px solid #3e43b9;
+  opacity: var(--scale);
+  -webkit-transform: scale(var(--scale));
+  transform: scale(var(--scale));
+  transition: 300ms opacity cubic-bezier(0.39, 0.575, 0.565, 1),
+    300ms transform cubic-bezier(0.39, 0.575, 0.565, 1),
+    150ms border-radius cubic-bezier(0.39, 0.575, 0.565, 1);
+}
+
+html:not(html:hover) .cursor::after {
+  opacity: 0;
+  transform: scale(0);
+}
+
+body{
+  cursor: none;
+}
 
 @media only screen and (min-width: 320px) and (max-width: 765px) {
+  .navbar-brand {
+    height: 51px;
+  }
+  .drop{
+    top: -13%;
+    left:-10.4%;
+  }
   .project_work_box {
     width: 100%;
   }
