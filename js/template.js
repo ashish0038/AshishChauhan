@@ -257,44 +257,47 @@ const updateProperties = (elem, state) => {
     elem.style.setProperty("--scale", state.scale);
 };
 
-document.querySelectorAll(".cursor").forEach((cursor) => {
-    let onElement;
+// document.querySelectorAll(".cursor").forEach((cursor) => {
+//     let onElement;
 
-    const createState = (e) => {
-        const defaultState = {
-            x: e.clientX,
-            y: e.clientY,
-            width: 40,
-            height: 40,
-            radius: "50%"
-        };
+//     const createState = (e) => {
+//         const defaultState = {
+//             x: e.clientX,
+//             y: e.clientY,
+//             width: 40,
+//             height: 40,
+//             radius: "50%"
+//         };
 
-        const computedState = {};
+//         const computedState = {};
 
-        if (onElement != null) {
-            const { top, left, width, height } = onElement.getBoundingClientRect();
-            const radius = window.getComputedStyle(onElement).borderTopLeftRadius;
+//         if (onElement != null) {
+//             const { top, left, width, height } = onElement.getBoundingClientRect();
+//             const radius = window.getComputedStyle(onElement).borderTopLeftRadius;
 
-            computedState.x = left + width / 2;
-            computedState.y = top + height / 2;
-            computedState.width = width;
-            computedState.height = height;
-            computedState.radius = radius;
-        }
+//             computedState.x = left + width / 2;
+//             computedState.y = top + height / 2;
+//             computedState.width = width;
+//             computedState.height = height;
+//             computedState.radius = radius;
+//         }
 
-        return {
-            ...defaultState,
-            ...computedState
-        };
-    };
+//         return {
+//             ...defaultState,
+//             ...computedState
+//         };
+//     };
 
-    document.addEventListener("mousemove", (e) => {
-        const state = createState(e);
-        updateProperties(cursor, state);
-    });
+//     document.addEventListener("mousemove", (e) => {
+//         const state = createState(e);
+//         updateProperties(cursor, state);
+//     });
 
-    document.querySelectorAll("a, button").forEach((elem) => {
-        elem.addEventListener("mouseenter", () => (onElement = elem));
-        elem.addEventListener("mouseleave", () => (onElement = undefined));
-    });
-});
+//     document.querySelectorAll("a, button").forEach((elem) => {
+//         elem.addEventListener("mouseenter", () => (onElement = elem));
+//         elem.addEventListener("mouseleave", () => (onElement = undefined));
+//     });
+// });
+
+
+
