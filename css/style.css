@@ -354,6 +354,9 @@ body {
     margin-top: -12px;
     width: 80px;
   }
+  .btn_group{
+    flex-direction: column;
+  }
 }
 @media only screen and (min-width: 768px) and (max-width: 1024px) {
   .navbar-right {
@@ -368,6 +371,9 @@ body {
   }
   .navbar-default .navbar-nav > li > a {
     padding: 15px 10px;
+  }
+  .btn_group{
+    flex-direction: column;
   }
 }
 
@@ -1839,6 +1845,16 @@ img {
   .timeline-centered .timeline-entry .timeline-entry-inner .timeline-label h2 span {
     display: block;
     margin-left: 0;
+  }
+  .about_me_dark{
+    flex-direction: column;
+    padding: 2em;
+  }
+  .about_middle{
+    display: none;
+  }
+  .about_left_content, .about_right_content{
+    width: 100%;
   }
 }
 
